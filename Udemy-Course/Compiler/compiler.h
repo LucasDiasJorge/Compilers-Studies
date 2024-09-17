@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 enum{
-    COMPILER_FILE_COMPILE_OK,
+    COMPILER_FILE_COMPILED_OK,
     COMPILER_FAILED_WITH_ERRORS
 };
 
