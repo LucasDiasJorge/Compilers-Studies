@@ -7,7 +7,7 @@
 #define NUM_STRINGS 100
 
 // Define the regex for EPC verification
-const char* epcRegex = "^[a-fA-F0-9]{6,24}$";
+const char* epcRegex = "^11[a-fA-F0-9]{4,22}$";
 
 // List of test strings (fill with appropriate values for testing)
 const char* testStrings[NUM_STRINGS] = {
@@ -53,6 +53,9 @@ int scratchVerify(const char* string) {
     if (len < 6 || len > 24) {
         return 0;
     }
+
+    if(string[0] != '1') return 0;
+    if(string[1] != '1') return 0;
 
     // Check if each character is a valid hexadecimal digit
     for (int i = 0; i < len; i++) {
