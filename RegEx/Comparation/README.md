@@ -42,3 +42,7 @@ Scratch verification time: 0.000003 seconds
 Regex matched 4 strings
 Scratch code matched 4 strings
 ```
+
+#### PS
+
+tnks _[Thiago Marquet](https://github.com/Thiago-Marquet)_
